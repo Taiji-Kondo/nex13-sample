@@ -5,7 +5,7 @@ export const HeaderNavigation = () => {
     <nav className={'bg-gray-500 h-10'}>
       <ul className={'flex items-center justify-around h-full'}>
         <li>
-          <Link href={'/'} className={'underline text-white'}>TOP</Link>
+          <Link href={'/my-page'} className={'underline text-white'}>MY PAGE</Link>
         </li>
         <li>
           <Link href={'/post'} className={'underline text-white'}>POST</Link>
