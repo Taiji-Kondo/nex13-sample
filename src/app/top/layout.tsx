@@ -4,17 +4,19 @@ import {ReactNode} from "react";
 import {BaseHeader} from "@/components/header/BaseHeader";
 import {HeaderNavigation} from "@/components/navigation/HeaderNavigation";
 
-const RootLayout = ({
+const TopPageLayout = ({
   children,
 }: {
   children: ReactNode
 }) => {
   return (
-    <html lang="jp">
-      <head />
-      {children}
-    </html>
+    <body>
+      <BaseHeader />
+      <main>
+        {children}
+      </main>
+    </body>
   )
 }
 
-export default RootLayout
+export default TopPageLayout
