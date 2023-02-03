@@ -2,6 +2,7 @@ import '@/app/styles/globals.css'
 
 import {ReactNode} from "react";
 import {BaseHeader} from "@/components/header/BaseHeader";
+import {HeaderNavigation} from "@/components/navigation/HeaderNavigation";
 
 export default function RootLayout({
   children,
@@ -13,6 +14,7 @@ export default function RootLayout({
       <head />
       <body>
         <BaseHeader />
+        <HeaderNavigation />
         <main>
           {children}
         </main>
