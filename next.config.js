@@ -5,6 +5,14 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  async rewrites() {
+    return [
+      {
+        destination: '/top',
+        source: '/',
+      },
+    ];
+  },
 }
 
 module.exports = nextConfig
