@@ -1,7 +1,9 @@
 export default function Home() {
   return (
-    <main>
-      Top Page
-    </main>
+    <div className={'container mx-auto'}>
+      <h2 className={'font-bold text-md'}>
+        Top Page
+      </h2>
+    </div>
   )
 }

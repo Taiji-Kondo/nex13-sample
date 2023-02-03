@@ -1,4 +1,7 @@
+import '@/app/styles/globals.css'
+
 import {ReactNode} from "react";
+import {BaseHeader} from "@/components/header/BaseHeader";
 
 export default function RootLayout({
   children,
@@ -8,7 +11,12 @@ export default function RootLayout({
   return (
     <html lang="jp">
       <head />
-      <body>{children}</body>
+      <body>
+        <BaseHeader />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
