@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Home = () => {
+const Top = () => {
   return (
     <div className={'container mx-auto'}>
       <h2 className={'font-bold text-md'}>
@@ -14,4 +14,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Top
