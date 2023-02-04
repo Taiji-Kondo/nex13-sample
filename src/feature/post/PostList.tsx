@@ -1,4 +1,4 @@
-import {useGetPosts} from "@/feature/post/useGetPosts";
+import {useGetPosts} from "@/feature/post/hooks/useGetPosts";
 
 export const PostList = () => {
   const data = useGetPosts()
