@@ -1,5 +1,5 @@
 import {Suspense} from "react";
-import {PostList} from "@/feature/post/PostList";
+import {Posts} from "@/feature/post/Posts";
 
 const Post = () => {
   return (
@@ -10,7 +10,7 @@ const Post = () => {
 
 
       <Suspense fallback={<div>Loading...</div>}>
-        <PostList />
+        <Posts />
       </Suspense>
     </div>
   )

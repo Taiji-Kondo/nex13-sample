@@ -5,7 +5,7 @@ import Link from "next/link";
  * fetch-on-render pattern
  **/
 
-export const PostList = () => {
+export const Posts = () => {
   const data = useGetPosts()
 
   return (
