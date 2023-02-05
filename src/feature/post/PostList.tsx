@@ -1,6 +1,10 @@
 import {useGetPosts} from "@/feature/post/hooks/useGetPosts";
 import Link from "next/link";
 
+/**
+ * fetch-on-render pattern
+ **/
+
 export const PostList = () => {
   const data = useGetPosts()
 

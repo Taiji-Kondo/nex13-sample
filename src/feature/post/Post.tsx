@@ -1,18 +1,19 @@
-import {useGetPost} from "@/feature/post/hooks/useGetPost";
+import {Loadable} from "@/helpers/Loadable";
+import {PostType} from "@/types/model/PostType";
 
-type PostDetailType = {
-  id: number
-}
+/**
+ * render-as-your-fetch pattern
+ **/
 
-export const Post = ({id}: PostDetailType) => {
-  const data = useGetPost(id)
+export const Post = ({data}: { data: Loadable<PostType> }) => {
+  const post = data.getOrThrow()
 
   return (
     <div>
       <h2>
-        {data.title}
+        {post.title}
       </h2>
-      <p>{data.body}</p>
+      <p>{post.body}</p>
     </div>
   )
 }

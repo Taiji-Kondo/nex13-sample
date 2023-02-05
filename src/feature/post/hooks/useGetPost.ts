@@ -1,10 +1,6 @@
 import axios from "axios";
 import {PostType} from "@/types/model/PostType";
 
-/**
- * Fetch-on-render pattern
- **/
-
 let data: PostType | undefined = undefined
 export const useGetPost = (id: number) => {
   if (data === undefined) {
