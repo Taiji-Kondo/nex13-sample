@@ -1,11 +1,5 @@
 import axios from "axios";
-
-export type PostType = {
-  userId: number,
-  id: number,
-  title: string,
-  body: string,
-}
+import {PostType} from "@/types/model/PostType";
 
 let data: PostType[] | undefined = undefined
 export const useGetPosts = () => {
