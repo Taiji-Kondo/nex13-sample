@@ -1,5 +1,7 @@
 # Next.js version 13 Playground
 
+[Documents](https://beta.nextjs.org/docs/getting-started)
+
 ## Feature
 
 - [x] App Directory
