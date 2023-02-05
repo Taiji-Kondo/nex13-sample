@@ -11,6 +11,9 @@ export const HeaderNavigation = () => {
           <Link href={'/post'} className={'underline text-white'}>POST</Link>
         </li>
         <li>
+          <Link href={'/memory'} className={'underline text-white'}>MEMORY</Link>
+        </li>
+        <li>
           <div className={'text-white'}>ABOUT</div>
         </li>
         <li>
