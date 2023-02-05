@@ -1,4 +1,4 @@
-import '@/app/styles/globals.css'
+
 
 import {ReactNode} from "react";
 import {BaseHeader} from "@/components/header/BaseHeader";
