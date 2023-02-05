@@ -6,6 +6,7 @@ import {Loadable} from "@/helpers/Loadable";
 import axios from "axios";
 import {PostType} from "@/types/model/PostType";
 import {notFound} from "next/navigation";
+import {Loader} from "@/components/loader/Loader";
 
 const PostDetail = ({params}: {params: {id: number}}) => {
   const id = Number(params.id)
@@ -28,7 +29,7 @@ const PostDetail = ({params}: {params: {id: number}}) => {
       </h2>
 
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Post data={data} />
       </Suspense>
     </div>

@@ -1,5 +1,6 @@
 import {Suspense} from "react";
 import {Posts} from "@/feature/post/Posts";
+import {Loader} from "@/components/loader/Loader";
 
 const Post = () => {
   return (
@@ -9,7 +10,7 @@ const Post = () => {
       </h2>
 
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Posts />
       </Suspense>
     </div>
