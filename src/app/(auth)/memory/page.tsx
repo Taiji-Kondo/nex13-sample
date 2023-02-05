@@ -1,15 +1,9 @@
 'use client'
 
-import {ReactNode, Suspense, useState} from "react";
-import {Posts} from "@/feature/post/Posts";
+import {Suspense, useState} from "react";
 import {Loader} from "@/components/loader/Loader";
-import {PostType} from "@/types/model/PostType";
-import axios from "axios/index";
-import {PhotoType} from "@/types/model/PhotoType";
-import {AlbumType} from "@/types/model/AlbumType";
 import {Photos} from "@/feature/memory/Photos";
 import {Albums} from "@/feature/memory/Albums";
-
 
 const TAB_PANEL = {
   photo: <Photos />,
@@ -28,7 +22,7 @@ const Memory = () => {
       </h2>
 
       <Suspense fallback={<Loader />}>
-        <div className={'flex space-x-4'}>
+        <div className={'flex'}>
           <button
             className={`p-3 rounded-md text-white ${currentTab === 'photo' ? 'bg-gray-500' : 'bg-gray-300'}`}
             onClick={() => setCurrentTab('photo')}
@@ -43,7 +37,10 @@ const Memory = () => {
           </button>
         </div>
 
-        <div>
+        <div className={'border-2 p-3'}>
+          <h3 className={'text-md font-bold'}>
+            {currentTab}
+          </h3>
           {TAB_PANEL[currentTab]}
         </div>
       </Suspense>
