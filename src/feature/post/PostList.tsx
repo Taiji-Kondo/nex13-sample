@@ -1,4 +1,5 @@
 import {useGetPosts} from "@/feature/post/hooks/useGetPosts";
+import Link from "next/link";
 
 export const PostList = () => {
   const data = useGetPosts()
@@ -6,7 +7,11 @@ export const PostList = () => {
   return (
     <ul>
       {data.map((post) => (
-        <li key={post.id}>{post.title}</li>
+        <li key={post.id}>
+          <Link href={`/post/${post.id}`}>
+            {post.title}
+          </Link>
+        </li>
       ))}
     </ul>
   )

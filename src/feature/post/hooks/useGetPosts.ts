@@ -1,16 +1,16 @@
 import axios from "axios";
 
-type Post = {
+export type PostType = {
   userId: number,
   id: number,
   title: string,
   body: string,
 }
 
-let data: Post[] | undefined = undefined
+let data: PostType[] | undefined = undefined
 export const useGetPosts = () => {
   if (data === undefined) {
-    throw axios.get<Post[]>('https://jsonplaceholder.typicode.com/posts').then((response) => data = response.data)
+    throw axios.get<PostType[]>('https://jsonplaceholder.typicode.com/posts').then((response) => data = response.data)
   }
   return data
 }
