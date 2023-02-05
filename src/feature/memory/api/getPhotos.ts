@@ -1,5 +1,6 @@
 import {PhotoType} from "@/types/model/PhotoType";
 import axios from "axios";
+import "server-only";
 
 let photos: PhotoType[] | undefined = undefined
 export const getPhotos = () => {

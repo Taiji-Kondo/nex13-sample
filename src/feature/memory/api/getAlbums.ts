@@ -1,5 +1,6 @@
 import axios from "axios";
 import {AlbumType} from "@/types/model/AlbumType";
+import "server-only";
 
 let albums: AlbumType[] | undefined = undefined
 export const getAlbums = () => {
